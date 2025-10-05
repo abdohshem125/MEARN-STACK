@@ -1,0 +1,66 @@
+const mongoose = require("mongoose");
+const Student = require("./models/studentModel");
+const Department = require("./models/departmentModel");
+const Course = require("./models/courseModel");
+
+require("dotenv").config();
+
+async function seed() {
+  try {
+    // connect to DB
+    await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
+    console.log("✅ Connected to DB");
+
+    // clear old data
+    await Student.deleteMany({});
+    await Department.deleteMany({});
+    await Course.deleteMany({});
+    console.log("🗑️ Old data cleared");
+
+    // create departments
+    const csDept = new Department({ name: "Computer Science", building: "A" });
+    const mathDept = new Department({ name: "Mathematics", building: "B" });
+
+    await csDept.save();
+    await mathDept.save();
+
+    // create courses
+    const algoCourse = new Course({ title: "Algorithms", credits: 3, dept_id: csDept._id });
+    const dbCourse = new Course({ title: "Databases", credits: 4, dept_id: csDept._id });
+    const calcCourse = new Course({ title: "Calculus", credits: 3, dept_id: mathDept._id });
+
+    await algoCourse.save();
+    await dbCourse.save();
+    await calcCourse.save();
+
+    // create students
+    const s1 = new Student({
+      name: "Ali",
+      age: 21,
+      dept_id: csDept._id,
+      courses: [algoCourse._id, dbCourse._id],
+    });
+
+    const s2 = new Student({
+      name: "Mona",
+      age: 22,
+      dept_id: mathDept._id,
+      courses: [calcCourse._id],
+    });
+
+    await s1.save();
+    await s2.save();
+
+    console.log("🎉 Seeding done!");
+    process.exit();
+  } catch (err) {
+    console.error("❌ Error seeding:", err);
+    process.exit(1);
+  }
+}
+
+seed();

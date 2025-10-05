@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+a { color: blue; text-decoration: none; }
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
