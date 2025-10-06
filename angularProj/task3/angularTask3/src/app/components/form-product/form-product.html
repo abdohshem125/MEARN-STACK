@@ -1,0 +1,53 @@
+<!-- <form [formGroup]="productForm" class="container mt-5 rounded-2 border border-danger p-3" (submit)="display()">
+    <div class="input-group mb-3">
+        <span class="input-group-text">product name</span>
+        <input type="text" class="form-control" placeholder="product name" formControlName="name" />
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text">product disc</span>
+        <input type="text" class="form-control" placeholder="product disc" formControlName="disc" />
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text">product img url</span>
+        <input type="text" class="form-control" placeholder="product img url" formControlName="imgUrl" />
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text">product rate</span>
+        <input type="text" class="form-control" placeholder="product rate" formControlName="rate" />
+    </div>
+
+    <button type="submit" class="btn btn-danger w-100">display</button>
+</form> -->
+
+
+
+<form [formGroup]="productForm" (submit)="display()">
+    <div class="form-row align-items-center">
+        <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputName">product name</label>
+            <input type="text" class="form-control" id="inlineFormInputName" placeholder="product name"
+                formControlName="name">
+        </div>
+        <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputGroupUsername">product disc</label>
+            <input type="text" class="form-control" id="inlineFormInputName" placeholder="product disc"
+                formControlName="disc">
+        </div>
+        <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputGroupUsername">product img url</label>
+            <input type="text" class="form-control" id="inlineFormInputName" placeholder="img url"
+                formControlName="imgUrl">
+        </div>
+        <div class="col-sm-3 my-1">
+            <label class="sr-only" for="inlineFormInputGroupUsername">product rate</label>
+            <input type="text" class="form-control" id="inlineFormInputName" placeholder="product rate"
+                formControlName="rate">
+        </div>
+        <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">display</button>
+        </div>
+    </div>
+</form>
