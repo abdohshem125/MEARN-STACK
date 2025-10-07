@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let prd of products">
+        <div class="card">
+            <img [src]="prd.imgUrl" class="card-img-top">
+            <div class="card-body" appDirProd>
+                <h5 class="card-title">{{prd.name}}</h5>
+                <p class="card-text">Price : {{prd.price}}</p>
+                <p class="card-text">Quantity : {{prd.quantity}}</p>
+                <input type="number" #countInp class="mx-3 rounded-2 border-1">
+                <button class="btn btn-success">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>

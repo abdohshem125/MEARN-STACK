@@ -1,0 +1,44 @@
+/* 🌿 Hero Section Styling */
+.hero {
+  min-height: 70vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #212529;
+  padding: 4rem 1rem;
+}
+
+/* ✨ Title */
+.hero h1 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+/* 📝 Subtitle */
+.hero p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* 🖱 Button */
+.hero .btn {
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #343a40;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 📄 Router outlet container */
+.hero router-outlet {
+  display: block;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+}

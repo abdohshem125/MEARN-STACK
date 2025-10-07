@@ -1,0 +1,14 @@
+.about-section {
+  max-width: 900px;
+}
+
+.about-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}

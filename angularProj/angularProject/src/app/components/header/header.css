@@ -1,0 +1,42 @@
+/* 🧭 Navbar base */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* ✨ Brand */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* 📝 Nav links */
+.nav-link.nav-custom {
+  font-weight: 500;
+  color: #444;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+.nav-link.nav-custom:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/* ✅ Active link */
+.active-link {
+  background-color: #000;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+/* 🖱 Login button */
+.navbar .btn {
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,35 @@
+/* Hero section */
+.about-hero {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  padding: 100px 20px;
+}
+
+.about-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Info boxes */
+.info-box {
+  background: white;
+  border-left: 5px solid #0d6efd;
+}
+
+/* Skills */
+.skill-box {
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+  background-color: #0d6efd !important;
+  color: white;
+}
+
+/* Contact section */
+.contact-section {
+  border-top: 1px solid #eaeaea;
+}

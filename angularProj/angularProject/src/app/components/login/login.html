@@ -1,0 +1,31 @@
+<div class="login-container d-flex justify-content-center align-items-center">
+    <div class="login-card bg-white p-4 rounded shadow-sm w-100" style="max-width: 400px;">
+        <h3 class="mb-4 text-center fw-bold">Welcome Back 👋</h3>
+
+        <form (ngSubmit)="onLogin()">
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input type="email" id="email" class="form-control form-control-lg" [(ngModel)]="email" name="email"
+                    required />
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label for="password" class="form-label fw-semibold">Password</label>
+                <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password"
+                    name="password" required />
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="btn btn-dark w-100 py-2 mt-2 rounded-pill">
+                Login
+            </button>
+        </form>
+
+        <p class="text-center text-muted mt-3 mb-0 small">
+            Don’t have an account? <a routerLink="/register" class="text-dark fw-semibold text-decoration-none">Sign
+                up</a>
+        </p>
+    </div>
+</div>
