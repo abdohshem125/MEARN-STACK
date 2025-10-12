@@ -1,11 +1,9 @@
-/* 🧍‍♂️ Center the login card */
 .login-container {
   min-height: 100vh;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 1rem;
 }
 
-/* 🪄 Card */
 .login-card {
   border: 1px solid #eaeaea;
   transition: all 0.3s ease;
@@ -16,13 +14,11 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* ✨ Labels */
 .form-label {
   font-size: 0.95rem;
   color: #333;
 }
 
-/* 📝 Inputs */
 .form-control {
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -35,7 +31,6 @@
   box-shadow: 0 0 0 0.15rem rgba(0, 0, 0, 0.1);
 }
 
-/* 🖱 Button */
 .login-card .btn {
   transition: all 0.3s ease;
 }

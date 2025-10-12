@@ -6,6 +6,7 @@ import { Profile } from './components/profile/profile';
 import { About } from './components/about/about';
 import { authGuard } from './guards/auth-guard';
 import { Readme } from './components/home/child/readme/readme';
+import { Footer } from './components/footer/footer';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },

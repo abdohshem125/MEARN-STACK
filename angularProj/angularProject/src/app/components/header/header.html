@@ -21,7 +21,14 @@
             </ul>
 
             <div class="ms-3">
-                <button class="btn btn-dark px-4 py-2 rounded-pill" type="button" routerLink="/login">Login</button>
+                <button *ngIf="!isLoggedIn" class="btn btn-dark px-4 py-2 rounded-pill" routerLink="/login">
+                    Login
+                </button>
+
+                <button *ngIf="isLoggedIn" (click)="logout()" routerLink="/login"
+                    class="btn btn-danger px-4 py-2 rounded-pill">
+                    Logout
+                </button>
             </div>
         </div>
     </div>
