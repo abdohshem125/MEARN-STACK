@@ -12,14 +12,6 @@ import { Router } from '@angular/router';
 export class Header {
   constructor(private router: Router) {}
 
-  // constructor() {
-  //   this.checkLoginStatus();
-  // }
-
-  // checkLoginStatus() {
-  //   const user = localStorage.getItem('user');
-  //   this.isLoggedIn = !!user;
-  // }
 
   get isLoggedIn() {
     const user = localStorage.getItem('user');

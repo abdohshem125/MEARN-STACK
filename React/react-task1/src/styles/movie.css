@@ -1,0 +1,8 @@
+.movie-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
